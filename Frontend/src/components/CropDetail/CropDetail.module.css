@@ -1,0 +1,102 @@
+.container {
+  background-color: var(--color-grey-light);
+  margin-top: -15rem;
+  padding: 15rem;
+}
+.secondaryHeading {
+  color: var(--color-primary);
+}
+
+.cropDetail {
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(85, 197, 122, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../../assets/Form.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  padding: 5rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  font-family: inherit;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid transparent;
+  border: none;
+  width: 40%;
+  display: block;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--color-primary);
+}
+
+.form__input--invalid {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  font-family: inherit;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid transparent;
+  border: 3px solid var(--color-secondary);
+  width: 40%;
+  display: block;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.form__label {
+  font-size: 2rem;
+  color: var(--color-card);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.error {
+  color: var(--color-secondary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form__actions {
+  text-align: center;
+}
+.form__actions button {
+  height: 4rem;
+  width: 15rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--color-primary);
+  transition: all 0.2s;
+}
+
+.form__actions button:disabled,
+.form__actions button:disabled:hover,
+.form__actions button:disabled:active {
+  background-color: var(--color-link);
+  color: var(--color-grey);
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+.form__actions button:hover,
+.form__actions button:active {
+  transform: scale(1.1) translateY(-0.5rem);
+}
+.form__actions button:active {
+  transform: translateY(0);
+}

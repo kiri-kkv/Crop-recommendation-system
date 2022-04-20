@@ -1,0 +1,62 @@
+.picture {
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(85, 197, 122, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../../assets/headerPicture.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mainHeading {
+  margin-bottom: 1.5rem;
+  transition: all 0.4s;
+  animation: moveInLeft 0.8s ease-out;
+}
+.secondaryHeading {
+  animation: moveInRight 0.8s ease-out;
+}
+.heading__secondary {
+  color: var(--color-card);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

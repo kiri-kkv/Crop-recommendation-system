@@ -1,0 +1,48 @@
+:root {
+  --color-grey-light: #f7f7f7;
+  --color-grey-light-1: #d3d3d38c;
+  --color-grey: #808080;
+  --color-link: rgba(255, 255, 255, 0.657);
+  --color-food-card: #f9f7f6ce;
+  --color-food-name: #040b14;
+  --color-black: #000;
+  --color-footer: #333;
+  --color-card: #fff;
+  --color-aboutus: rgba(149, 141, 141, 0.178);
+  --color-primary-light: rgb(85, 197, 122);
+  --color-primary-dark: rgb(40, 180, 133);
+  --color-primary-dark-2: rgb(0, 121, 81);
+  --color-primary: #7ed56f;
+  --color-secondary: rgba(255, 0, 0, 0.77);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}

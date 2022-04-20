@@ -1,0 +1,25 @@
+.feedback {
+  padding: 8rem 0 15rem 0;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+}
+
+.people__feedback {
+  width: 70%;
+  margin: 0rem auto;
+}
+@media only screen and (max-width: 56.25em) {
+  .people__feedback {
+    width: 85%;
+  }
+}
+
+.secondaryHeading {
+  color: var(--color-card);
+  font-weight: 1000;
+}
